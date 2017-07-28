@@ -15,7 +15,14 @@
     .navbar-toggle {
       margin: 0;
       padding: 6px 10px;
-      color: white;
+
+      &:focus {
+        background-color: rgba(255,255,255,0.2);
+      }
+
+      &:hover {
+        background-color: rgba(255,255,255,0.1);
+      }
     }
 
     .header-row {
