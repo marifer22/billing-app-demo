@@ -22,50 +22,89 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
-  <body>
+  <body class="main-layout">
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container main-layout header">
-      <div class="row header buttons">
-        <div class="col-sm-1 col-xs-2">
-          <button type="button" class="btn btn-default" aria-label="Center Align">
-            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-          </button>
-        </div>
-
-        <div class="col-sm-2 col-xs-4">
-          <a href="/" class="logo">
-            <img src="/images/logo_libreria.png" class= "img-responsive">
-          </a>
-        </div>
-
-        <div class="col-sm-6 col-xs-6">
-          <input type="search" class="form-control" placeholder="Search">
-        </div>
-
-        <div class="col-sm-3 btn-group">
-          <button type="button" class="btn btn-default" aria-label="Center Align">
-            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-          </button>
-          <button type="button" class="btn btn-default" aria-label="Center Align">
-            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-          </button>
-
-          <div class="btn-group" role="group">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Idioma
-              <span class="caret"></span>
+    <div class="navbar navbar-default">
+      <div class="container-fluid header">
+        <div class="row">
+          <div class="col-sm-1 col-xs-2 navbar-header">
+            <button type="button" class="btn btn-default navbar-toggle collapsed" data-toggle="collapse" data-target="#header-menu" aria-expanded="false" aria-label="Center Align">
+              <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
             </button>
-            <ul class="dropdown-menu">
-              <li><a href="#">Español</a></li>
-              <li><a href="#">Inglés</a></li>
-            </ul>
+          </div>
+
+          <div class="col-sm-2 col-xs-4">
+            <a href="/" class="logo">
+              <img src="/images/logo_libreria.png" class= "img-responsive">
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-xs-6">
+            <input type="search" class="form-control" placeholder="Search">
+          </div>
+
+          <div class="col-sm-3 btn-group">
+            <button type="button" class="btn btn-default" aria-label="Center Align">
+              <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+            </button>
+            <button type="button" class="btn btn-default" aria-label="Center Align">
+              <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            </button>
+
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Idioma
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Español</a></li>
+                <li><a href="#">Inglés</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+    </div>
 
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="header-menu">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Libros</a></li>
+          <li><a href="#">Ebooks</a></li>
+          <li><a href="#">Infantiles</a></li>
+          <li><a href="#">CDs y DVDs</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Otros Articulos <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Juegos de mesa</a></li>
+              <li><a href="#">Rompecabezas</a></li>
+              <li><a href="#">Joseph Joseph</a></li>
+              <li><a href="#">Kikkerland</a></li>
+              <li><a href="#">IINDEF</a></li>
+              <li><a href="#">Otros</a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class= "container">
       <div class="row main-content">
 
       </div>
@@ -74,7 +113,6 @@
 
       </div>
     </div>
-
     <!-- hidden -->
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
       <script>
