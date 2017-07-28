@@ -2,6 +2,29 @@
   .header {
     background-color:#b33f3f;
     padding: 15px 0;
+
+    .logo img {
+      width: 100%;
+      max-width: 115px;
+    }
+
+    .navbar-header {
+      padding: 0;
+    }
+
+    .navbar-toggle {
+      margin: 0;
+      padding: 6px 10px;
+      color: white;
+    }
+
+    .header-row {
+      margin: 0;
+    }
+
+    .header-divider {
+      height: 10px;
+    }
   }
 
   .main-content {
