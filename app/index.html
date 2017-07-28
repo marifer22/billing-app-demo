@@ -27,9 +27,36 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container-fluid main-layout">
-      <div class="row header">
+    <div class="container main-layout header">
+      <div class="row header buttons">
+        <div class="col-sm-2 col-xs-4">
+          <a href="/" class="logo">
+            <img src="/images/logo_libreria.png" class= "img-responsive">
+          </a>
+        </div>
+        <div class="col-sm-7 col-xs-8">
+          <input type="search" class="form-control" placeholder="Search">
+        </div>
 
+        <div class="col-sm-3 col-xs-4 btn-group">
+          <button type="button" class="btn btn-default" aria-label="Center Align">
+            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Center Align">
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+          </button>
+
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Idioma
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Español</a></li>
+              <li><a href="#">Inglés</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <div class="row main-content">
