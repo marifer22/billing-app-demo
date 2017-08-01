@@ -2,18 +2,44 @@
   .header {
     background-color:#b33f3f;
     padding: 15px 0;
+    max-width: 1200px;
   }
 
   .burger-menu-container {
     margin-top: -20px;
   }
 
+  .burger-menu {
+    background-color: #b33f3f;
+    a {
+    color: #fff;
+    }
+  }
+
+  .hamburger, .nav-button {
+    background-color: #8f3636;
+    color: #fff;
+  }
+
   #header-menu {
     padding: 0;
   }
 
-  .burger-menu {
+  .navbar-header {
+    padding: 0px;
+  }
+
+  .navbar-default {
     background-color: #b33f3f;
+  }
+
+  .lib-logo {
+    max-height: 34px;
+  }
+
+  .hamburger {
+    margin: 0px;
+    max-height: 34px;
   }
 
   .main-content {
