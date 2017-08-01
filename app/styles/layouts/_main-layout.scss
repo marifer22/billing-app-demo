@@ -2,7 +2,40 @@
   .header {
     background-color:#b33f3f;
     padding: 15px 0;
+<<<<<<< HEAD
     max-width: 1200px;
+=======
+
+    .logo img {
+      width: 100%;
+      max-width: 115px;
+    }
+
+    .navbar-header {
+      padding: 0;
+    }
+
+    .navbar-toggle {
+      margin: 0;
+      padding: 6px 10px;
+
+      &:focus {
+        background-color: rgba(255,255,255,0.2);
+      }
+
+      &:hover {
+        background-color: rgba(255,255,255,0.1);
+      }
+    }
+
+    .header-row {
+      margin: 0;
+    }
+
+    .header-divider {
+      height: 10px;
+    }
+>>>>>>> e7d74b2a45a5666db0c9a6b697797df6f4886176
   }
 
   .burger-menu-container {
