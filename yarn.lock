@@ -1159,7 +1159,7 @@ concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
 
-concat-stream@^1.4.6, concat-stream@^1.4.7, concat-stream@^1.5.2:
+concat-stream@^1.4.6, concat-stream@^1.4.7, concat-stream@^1.5.2, concat-stream@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/concat-stream/-/concat-stream-1.6.0.tgz#0aac662fd52be78964d5532f694784e70110acf7"
   dependencies:
@@ -2043,6 +2043,10 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     write "^0.2.1"
 
+flatnest@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/flatnest/-/flatnest-1.0.0.tgz#20421ad05b46c63cad30ef14a8ec625f86b3f1c5"
+
 flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
@@ -2482,6 +2486,17 @@ gulp-eslint@^3.0.0:
     eslint "^3.0.0"
     gulp-util "^3.0.6"
 
+gulp-file-include@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/gulp-file-include/-/gulp-file-include-1.1.0.tgz#2c7204332020d56fe29107e81914e4a923f2826d"
+  dependencies:
+    balanced-match "^0.4.2"
+    concat-stream "^1.6.0"
+    extend "^3.0.0"
+    flatnest "^1.0.0"
+    gulp-util "^3.0.8"
+    through2 "^2.0.3"
+
 gulp-filter@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/gulp-filter/-/gulp-filter-4.0.0.tgz#395f58a256c559cdb9e0d157f1caaf5248a38dcb"
@@ -2630,7 +2645,7 @@ gulp-useref@^3.0.0:
     useref "^1.2.0"
     vinyl-fs "^2.2.1"
 
-gulp-util@*, gulp-util@^3, gulp-util@^3.0, gulp-util@^3.0.0, gulp-util@^3.0.1, gulp-util@^3.0.6, gulp-util@^3.0.7:
+gulp-util@*, gulp-util@^3, gulp-util@^3.0, gulp-util@^3.0.0, gulp-util@^3.0.1, gulp-util@^3.0.6, gulp-util@^3.0.7, gulp-util@^3.0.8:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/gulp-util/-/gulp-util-3.0.8.tgz#0054e1e744502e27c04c187c3ecc505dd54bbb4f"
   dependencies:
