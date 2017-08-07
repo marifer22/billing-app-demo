@@ -62,10 +62,6 @@
     padding: 0;
   }
 
-  .navbar-header {
-    padding: 0px;
-  }
-
   .navbar-default {
     background-color: #b33f3f;
     border-color: #b33f3f;
@@ -85,6 +81,24 @@
   }
 
   .footer {
+    max-width: 1200px;
 
+    a {
+      color: #fff;
+      text-decoration: none;
+      padding: 4px 8px;
+
+      &:focus {
+        background-color: #8f3636;
+      }
+
+      &:hover {
+        background-color: #8f3636;
+      }
+    }
+  }
+
+  .navbar-fixed-bottom {
+    padding-top: 12px;
   }
 }
