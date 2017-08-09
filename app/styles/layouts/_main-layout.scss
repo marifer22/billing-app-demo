@@ -32,11 +32,11 @@
     }
 
     .dropdown-menu {
-          background-color: #8f3636;
-          a {
-            color: #fff;
-          }
+      background-color: #8f3636;
+      a {
+        color: #fff;
       }
+    }
 
     .header-row {
       margin: 0;
@@ -48,7 +48,7 @@
   }
 
   .burger-menu-container {
-    margin-top: -20px;
+    padding-top: 64px;
   }
 
   .burger-menu {
@@ -59,7 +59,10 @@
   }
 
   #header-menu {
-    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 64px;
+    z-index: 1;
   }
 
   .navbar-default {
@@ -77,6 +80,26 @@
   }
 
   .main-content {
+    max-width: 1200px;
+
+    .all-content {
+      margin: 0 50px;
+      background-color: #fff;
+      min-height: 100vh;
+      padding: {
+        top: 84px;
+        bottom: 73px;
+      }
+    }
+
+    .book-box {
+      padding: 10px;
+    }
+
+    .book-image {
+      padding: 0;
+    }
+
 
   }
 
@@ -87,6 +110,7 @@
       color: #fff;
       text-decoration: none;
       padding: 4px 8px;
+      display: inline-block;
 
       &:focus {
         background-color: #8f3636;
