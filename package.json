@@ -6,6 +6,7 @@
   "scripts": {
     "serve": "gulp serve",
     "api": "json-server ./server/db.json --port 3001",
+    "crawler": "node ./server/crawler.js",
     "start": "yarn install && bower install && yarn serve"
   },
   "devDependencies": {
