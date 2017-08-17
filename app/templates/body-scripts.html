@@ -33,3 +33,9 @@
 <!-- build:js scripts/main.js -->
 <script src="scripts/main.js"></script>
 <!-- endbuild -->
+
+<!-- build:js scripts/@@page.js -->
+@@for (var i = 0; i < scripts.length; i++) {
+<script src="scripts/` + scripts[i] + `.js"></script>
+}
+<!-- endbuild -->

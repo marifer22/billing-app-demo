@@ -267,7 +267,9 @@
     </div>
 
     @@include('./templates/footer.html')
-
-    @@include('./templates/body-scripts.html')
+    @@include('./templates/body-scripts.html', {
+      "page": "home",
+      "scripts": ["home"]
+    })
   </body>
 </html>
