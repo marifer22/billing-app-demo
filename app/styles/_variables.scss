@@ -4,6 +4,10 @@ $main-color-alt: darken($main-color, 12%);
 
 $secundary-color: #e7a511;
 
+$primary-bx-color: lighten($secundary-color, 30%);
+
+$secundary-bx-color: desaturate($primary-bx-color, 10%);
+
 $primary-txt-color: #fff;
 
 $active-color: rgba(255,255,255,0.2);

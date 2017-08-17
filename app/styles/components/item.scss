@@ -1,0 +1,25 @@
+.product-box {
+  padding: 10px;
+  margin: 1px;
+  border-radius: 0px 8px 8px 0px;
+  background-color: $secundary-bx-color;
+}
+
+.product-image {
+  padding: 0;
+}
+
+.product-info {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  a {
+    color: $main-color;
+
+       &:focus {
+        background-color: $active-color;
+      }
+
+      &:hover {
+        background-color: $active-color;
+      }
+  }
+}
