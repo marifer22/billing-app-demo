@@ -5,9 +5,9 @@
   },
   "scripts": {
     "serve": "gulp serve",
-    "api": "json-server ./server/db.json --port 3001",
+    "api": "json-server ./server/db.json --port 3002",
     "crawler": "node ./server/crawler.js",
-    "start": "yarn install && bower install && (yarn api & yarn serve)"
+    "start": "yarn install && bower install && yarn serve"
   },
   "devDependencies": {
     "babel-core": "^6.4.0",
