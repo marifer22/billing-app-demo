@@ -32,7 +32,11 @@ window.LI = {
             callback(data);
           }
         });
-    }
+    },
+
+    smallName: function(product, length) {
+      return product.slice(0, length - 3) + '...';
+    },
   };
 
   $(LI.global.init);
