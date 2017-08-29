@@ -58,6 +58,28 @@ window.LI = {
     }
   };
 
+  var onFilter = function(e) {
+    e.preventDefault();
+    var $target = $(e.currentTarget);
+    var id= $target.attr('data-id');
+    var promise;
+
+    if($target.hasClass('author')){
+      promise = LI.global.fetchBooks({authorId:id});
+
+    } else if($target.hasClass('category')){
+      promise = LI.global.fetchBooks({categoryId:id});
+
+    } else if($target.hasClass('publisher')){
+      promise = LI.global.fetchBooks({publisherId:id});
+
+    } else if($target.hasClass('year')){
+      promise = LI.global.fetchBooks({year:id});
+    }
+
+    promise.then(LI.pages.home.renderBooks);
+  };
+
   /**
    * LI.global namespace, for global logic avaialbe in the whole app
    */
@@ -75,6 +97,7 @@ window.LI = {
       $search = $('#search');
 
       $search.on('keypress', onSearch);
+      $('body').on('click', '.author, .category, .publisher, .year', onFilter);
     },
 
     fetch: function(path, callback) {
