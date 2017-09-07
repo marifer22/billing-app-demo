@@ -1,13 +1,145 @@
 .main-layout {
-  .header {
+  background-color: $secundary-color;
 
+  .main-navbar {
+    background-color: $main-color;
+    border-color: $main-color;
   }
 
-  .main-content {
+  .header {
+    padding: 15px 0;
+    max-width: 1200px;
 
+    .logo img {
+      width: 100%;
+      max-width: 115px;
+    }
+
+    .navbar-header {
+      padding: 0;
+    }
+
+    .navbar-toggle, .nav-button{
+      margin: 0;
+      padding: 6px 10px;
+      background-color: $main-color-alt;
+      color: $primary-txt-color;
+      border-color: $main-color;
+
+      &:focus {
+        background-color: $active-color;
+      }
+
+      &:hover {
+        background-color: $active-color;
+      }
+    }
+
+    .dropdown-menu {
+      background-color: $main-color-alt;
+      a {
+        color: $primary-txt-color;
+      }
+    }
+
+    .header-row {
+      margin: 0;
+    }
+
+    .header-divider {
+      height: 10px;
+    }
+  }
+
+  .burger-menu-container {
+    padding-top: 64px;
+  }
+
+  .burger-menu {
+    background-color: $main-color;
+    a {
+      color: $primary-txt-color;
+
+      &:hover {
+        background-color: $active-color;
+      }
+
+      &:focus {
+        background-color: $active-color;
+      }
+    }
+
+    .open > a {
+      background-color: $active-color;
+    }
+  }
+
+  #header-menu {
+    position: fixed;
+    width: 100%;
+    top: 64px;
+    z-index: 1;
+  }
+
+  .hamburger {
+    margin: 0px;
+    max-height: 34px;
+  }
+
+  .main-container {
+    max-width: 1200px;
+
+    .main-content {
+      margin: 0 50px;
+      background-color: $primary-txt-color;
+      min-height: 100vh;
+      padding: {
+        top: 84px;
+        bottom: 85px;
+      }
+    }
   }
 
   .footer {
+    max-width: 1200px;
 
+    .navbar-footer {
+      display: table;
+      width: 100%;
+
+      .col-sm-2 {
+        display: table-row;
+
+        a {
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+
+
+    a {
+      color: $primary-txt-color;
+      text-decoration: none;
+      padding: 4px 8px;
+      display: inline-block;
+      width: 100%;
+      height: 48px;
+
+      &:focus {
+        background-color: $active-color;
+      }
+
+      &:hover {
+        background-color: $active-color;
+      }
+    }
+  }
+
+  .navbar-fixed-bottom {
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
